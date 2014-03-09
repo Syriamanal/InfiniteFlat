@@ -35,6 +35,7 @@ class InfiniteFlat implements Plugin{
 	protected static $defaultSettings=array(
 "World generation efficiency"=>true,
 "Overlapping chunks not-squared"=>2,
+"Number of worlds preloaded for buffer for players near world margin"=>1,
 		);
 }
 /*
