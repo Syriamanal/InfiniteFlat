@@ -5,7 +5,7 @@ I know the PocketMine team is making infinite flat worlds and it is said that it
 ===
 Copyright © 2014 PEMapModder
 
-InfiniteFlat for MCPE 0.8.1, PocketMine 1.3.12 stable release
+InfiniteFlat for MCPE 0.8.1, PocketMine 1.3.12 stable release (Amai Beetroot)
 
 Redistributions of this software and its modifications are allowed on the basis that the source and the original creator, PEMapModder, is given full credit on both the code writing and the theory of the principle of this plugin.
 
