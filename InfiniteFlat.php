@@ -68,9 +68,18 @@ class InfiniteFlatLevel extends Config{
 }
 class InfiniteFlatSingleGenerator implements LevelGenerator{
 	private $options;
+	private $layers=array();
 	public function __construct(array $options=array()){
 		$random=array_rand(self::getConfig()->get("presets"));
 		$this->options=isset($options["preset"])?$options["preset"]:$random;
+		$layers=$options["layers"];
+		foreach($layers as $layer){
+			$id=$layer[0];
+			$yTotal=$layer[1];
+			for($y=0; $y<$yTotal; $y++){
+				$this->layers[]=$id;
+			}
+		}
 	}
 	public function init(Level $level, Random $random){
 		$this->l=$level;
@@ -83,10 +92,18 @@ class InfiniteFlatSingleGenerator implements LevelGenerator{
 		return new Vector3(128, 128, 128);
 	}
 	public function generateChunk($cx, $cz){
-		for($y=0; $y<8; $y++){
-			$this->chunks[$y]="";
-			
-			$this->chunks[$y].=$blocks.hex2bin($metas)."\x00\x00\x00\x00\x00\x00\x00\x00";
+		for($my=0; $my<8; $my++){
+			$this->chunks[$my]="";
+			for($x=0; $x<16; $x++){
+				for($z=0; $z<16; $z++){
+				$blocks="";
+				$metas="";
+				for($y=0; $y<16; $y++){}
+					
+				}
+				$this->chunks[$my].=$blocks.hex2bin($metas)."\x00\x00\x00\x00\x00\x00\x00\x00";
+				}
+			}
 		}
 		$this->l->setMiniChunk();
 	}
