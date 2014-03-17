@@ -140,6 +140,7 @@ class InfiniteFlatSingleGenerator implements LevelGenerator{
 									array(STONE, 59),
 									array(DIRT, 3),
 									array(GRASS, 1),
+									array(GRAVEL, 13),
 							),
 							"populators"=>array(
 									array("tree", array(0), 150, 190),
@@ -153,6 +154,7 @@ class InfiniteFlatSingleGenerator implements LevelGenerator{
 									array(STONE, 58),
 									array(SANDSTONE, 2),
 									array(SAND, 3),
+									array(GRAVEL, 13),
 							),
 							"populators"=>array(
 									array("pillar", array(CACTUS, 2), 90, 130),
